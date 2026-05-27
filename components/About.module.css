@@ -1,0 +1,158 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 72px;
+  align-items: center;
+}
+
+/* ── Visual panel ── */
+.visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainImgWrap {
+  position: relative;
+  border: 2px solid rgba(212,175,55,0.3);
+  overflow: hidden;
+}
+
+.mainImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.mainImgWrap:hover .mainImg { transform: scale(1.04); }
+
+.imgBadge {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: #D4AF37;
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 22px 12px 10px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.smallImgWrap {
+  border: 1px solid rgba(212,175,55,0.2);
+  overflow: hidden;
+}
+
+.smallImg {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.smallImgWrap:hover .smallImg { transform: scale(1.06); }
+
+/* Floating badges */
+.badge1, .badge2 {
+  position: absolute;
+  background: rgba(8,8,16,0.95);
+  border: 1px solid rgba(212,175,55,0.45);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.badge1 { top: -14px; right: -16px; }
+.badge2 { bottom: 136px; left: -16px; }
+
+.badgeNum {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #D4AF37;
+}
+
+.badgeText {
+  font-size: 0.68rem;
+  color: rgba(240,237,228,0.65);
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ── Content ── */
+.tag {
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #D4AF37;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #D4AF37, transparent);
+  margin-bottom: 26px;
+}
+
+.text {
+  color: rgba(240,237,228,0.68);
+  font-size: 0.92rem;
+  line-height: 1.85;
+  margin-bottom: 15px;
+}
+.text strong { color: #F0EDE4; }
+.text em { color: #D4AF37; font-style: italic; }
+
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin: 24px 0;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.83rem;
+  color: rgba(240,237,228,0.75);
+}
+
+.valueIcon { font-size: 1.1rem; }
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .grid { grid-template-columns: 1fr; gap: 48px; }
+  .badge1 { top: -14px; right: 0; }
+  .badge2 { bottom: 132px; left: 0; }
+}
+
+@media (max-width: 500px) {
+  .values { grid-template-columns: 1fr; }
+  .badge1, .badge2 { position: static; display: inline-flex; margin-bottom: 6px; }
+}

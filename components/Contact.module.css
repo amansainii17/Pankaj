@@ -1,0 +1,131 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Info */
+.info {
+  background: #1A1A26;
+  border: 1px solid rgba(212,175,55,0.2);
+  padding: 44px 36px;
+}
+
+.infoTitle {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.3rem;
+  color: #D4AF37;
+  margin-bottom: 32px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.infoIcon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.infoLabel {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #D4AF37;
+  margin-bottom: 4px;
+}
+
+.infoValue {
+  font-size: 0.9rem;
+  color: rgba(240,237,228,0.75);
+  line-height: 1.6;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.socialBtn {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid rgba(212,175,55,0.3);
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.socialBtn:hover {
+  background: rgba(212,175,55,0.1);
+  border-color: #D4AF37;
+}
+
+.tagline {
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  color: rgba(212,175,55,0.5);
+  text-align: center;
+  border-top: 1px solid rgba(212,175,55,0.1);
+  padding-top: 20px;
+}
+
+/* Form */
+.formWrap {
+  background: #1A1A26;
+  border: 1px solid rgba(212,175,55,0.2);
+  padding: 44px 40px;
+}
+
+.formInner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.submitBtn {
+  width: 100%;
+  justify-content: center;
+  clip-path: none !important;
+  padding: 18px !important;
+  font-size: 1rem !important;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: rgba(240,237,228,0.35);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .row2 { grid-template-columns: 1fr; }
+  .formWrap { padding: 28px 20px; }
+  .info { padding: 28px 20px; }
+}

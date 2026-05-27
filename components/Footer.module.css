@@ -1,0 +1,124 @@
+.footer {
+  background: #080810;
+  padding: 80px 0 0;
+  position: relative;
+}
+
+.topLine {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  margin-bottom: 80px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 60px;
+}
+
+.brand {}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logoIcon {
+  font-size: 2rem;
+  color: #D4AF37;
+}
+
+.logoMain {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #9A7B0A, #D4AF37, #F5E070);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logoSub {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: rgba(212,175,55,0.5);
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: rgba(240,237,228,0.5);
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+.colTitle {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.8rem;
+  color: #D4AF37;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: block;
+  background: none;
+  border: none;
+  color: rgba(240,237,228,0.55);
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.link:hover { color: #D4AF37; }
+
+.serviceItem {
+  font-size: 0.875rem;
+  color: rgba(240,237,228,0.55);
+  padding: 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.serviceItem:first-letter { color: #D4AF37; }
+
+.contactItem {
+  font-size: 0.85rem;
+  color: rgba(240,237,228,0.55);
+  padding: 6px 0;
+  line-height: 1.5;
+}
+
+.bottom {
+  margin-top: 60px;
+}
+
+.bottomLine {
+  height: 1px;
+  background: rgba(212,175,55,0.1);
+  margin-bottom: 28px;
+}
+
+.bottomContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 28px;
+  font-size: 0.8rem;
+  color: rgba(240,237,228,0.35);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 960px) {
+  .grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; gap: 32px; }
+  .bottomContent { flex-direction: column; text-align: center; }
+}
