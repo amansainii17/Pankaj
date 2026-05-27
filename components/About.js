@@ -7,11 +7,11 @@ export default function About() {
         <div className={styles.grid}>
           {/* Visual side */}
           <div className={styles.visual}>
-            {/* Main mandala board — branded with "GTA Decorators – Arvind Saini" */}
+            {/* Main mandala board — branded with "Pankaj Decorators – Arvind Saini" */}
             <div className={styles.mainImgWrap}>
               <img
                 src="/images/w1-mandala-board.jpg"
-                alt="GTA Decorators — Arvind Saini branded mandala board"
+                alt="Pankaj Decorators — Arvind Saini branded mandala board"
                 className={styles.mainImg}
               />
               <div className={styles.imgBadge}>✦ Handcrafted by Arvind Saini ✦</div>
@@ -49,11 +49,11 @@ export default function About() {
           {/* Content side */}
           <div className={styles.content}>
             <div className={styles.tag}>About Us</div>
-            <h2 className={`${styles.title} gold-text`}>GTA Light<br/>Decoration</h2>
+            <h2 className={`${styles.title} gold-text`}>Pankaj Light<br/>Decoration</h2>
             <div className={styles.line} />
 
             <p className={styles.text}>
-              Based in <strong>Jamner, Guna, Madhya Pradesh</strong>, GTA Light Decoration has been the most trusted name in event lighting for over 15 years. We bring dreams to life through the art of illumination.
+              Based in <strong>Jamner, Guna, Madhya Pradesh</strong>, Pankaj Light Decoration has been the most trusted name in event lighting for over 15 years. We bring dreams to life through the art of illumination.
             </p>
             <p className={styles.text}>
               From grand weddings at the heart of MP to vibrant Diwali streets, from intimate birthday parties to large corporate events — our skilled team handles every project with passion and precision.

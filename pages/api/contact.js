@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"GTA Light Decoration Website" <${process.env.SMTP_USER}>`,
+      from: `"Pankaj Light Decoration Website" <${process.env.SMTP_USER}>`,
       to: 'arvind.saini30061976@gmail.com',
       subject: `✦ New Booking Inquiry – ${service} from ${name}`,
       html: `

@@ -50,7 +50,7 @@ const workshopItems = [
   {
     src: '/images/w1-mandala-board.jpg',
     label: 'Signature Mandala Board',
-    desc: 'Handcrafted circular mandala panel — signed by Arvind Saini, GTA Decorators',
+    desc: 'Handcrafted circular mandala panel — signed by Arvind Saini, Pankaj Decorators',
   },
   {
     src: '/images/w2-mandala-octagon.jpg',
@@ -180,7 +180,7 @@ export default function Gallery() {
         {tab === 'workshop' && (
           <>
             <p className={styles.workshopIntro}>
-              ✦ Behind every beautiful event is a world of hard work, craft & equipment. Here's a peek inside GTA Light Decoration's workshop.
+              ✦ Behind every beautiful event is a world of hard work, craft & equipment. Here's a peek inside Pankaj Light Decoration's workshop.
             </p>
             <div className={`${styles.grid} ${styles.workshopGrid}`}>
               {workshopItems.map((item, i) => (

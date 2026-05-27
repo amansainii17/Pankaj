@@ -14,7 +14,7 @@ export default function Footer() {
             <div className={styles.logo}>
               <span className={styles.logoIcon}>✦</span>
               <div>
-                <div className={styles.logoMain}>GTA Light Decoration</div>
+                <div className={styles.logoMain}>Pankaj Light Decoration</div>
                 <div className={styles.logoSub}>Illuminating Your Celebrations</div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <div className={styles.bottomLine} />
           <div className={styles.bottomContent}>
-            <p>© {new Date().getFullYear()} GTA Light Decoration. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Pankaj Light Decoration. All rights reserved.</p>
             <p>Owner: <strong style={{ color: '#D4AF37' }}>Arvind Saini</strong> | Guna, Madhya Pradesh</p>
           </div>
         </div>
